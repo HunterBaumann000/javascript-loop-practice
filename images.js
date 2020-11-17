@@ -15,7 +15,13 @@ $(document).ready(function () {
         $("#do-while-num").text(num - 1);
         $("#for-num").text(num);
 
+        var i=0;
+        var II=0
 
+        while (i < (num + 1)) {
+            addImageToDiv("#while-loop");
+            i++;
+        }
         /*
          Create a while loop that runs "num + 1" times.
 
@@ -24,10 +30,12 @@ $(document).ready(function () {
         */
 
 
-
-
-
+        do {
+            addImageToDiv("#do-while-loop");
+            II++
+        } while (II < (num - 1));
         /*
+
          Create a do-while loop that runs "num - 1" times.
 
          The body of the loop should contain the statement:
@@ -35,9 +43,9 @@ $(document).ready(function () {
         */
 
 
-
-
-
+        for (i = 0; i < num; i++) {
+            addImageToDiv("#for-loop");
+        }
         /*
          Create a for loop that runs exactly "num" times.
 
